@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Maneesha's Job Tracker</title>
+</head>
+
+
+<body>
+    <div class="container"> 
+      <header>
+        
+        <h1 class="app-class" id="app-title">Maneesha's Job Tracker</h1>
+      </header>
+
+      <!-- Job Input Form -->
+      <form id="item-form">
+        <div class="form-control">
+          <input
+            type="text"
+            class="form-input"
+            id="job-role"
+            name="job-role"
+            placeholder="Enter Job Role"
+          />
+        </div>
+        <div class="form-control">
+          <input
+            type="text"
+            class="form-input"
+            id="company-name"
+            name="company-name"
+            placeholder="Enter Company Name"
+          />
+        </div>
+        <div class="form-control">
+          <input
+            type="text"
+            class="form-input"
+            id="location"
+            name="location"
+            placeholder="Enter Location"
+          />
+        </div>
+        <div class="form-control">
+          <input
+            type="number"
+            class="form-input"
+            id="employee-count"
+            name="employee-count"
+            placeholder="Enter Employee Count"
+          />
+        </div>
+        <div class="form-control">
+          <input
+            type="url"
+            class="form-input"
+            id="company-link"
+            name="company-link"
+            placeholder="Enter LinkedIn Page URL"
+          />
+        </div>
+
+        <div class="form-control">
+          <button type="submit" class="btn">
+            <i class="fa-solid fa-plus"></i> Add Job
+          </button>
+        </div>
+      </form>
+
+      <!-- Filter Input -->
+      <div class="filter">
+        <input
+          type="text"
+          class="form-input-filter"
+          id="filter"
+          placeholder="Filter Jobs"
+        />
+      </div>
+
+      <!-- Job List -->
+      <ul id="item-list" class="items"></ul>
+
+      <!-- <button id="clear" class="btn-clear">Clear All</button> -->
+    </div> 
+    <!-- <script type="module" src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.14.0/firebase-database.js"></script>
+   -->
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="script.js"></script>
+    
+</body>
+</html>
